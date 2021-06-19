@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="./img/icon.png" type="img/png">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e3c5453e4f.js" crossorigin="anonymous"></script>
+
+    <title>Churrascômetro</title>
+</head>
+<body>
+    <div class="barbecue">
+        <div class="barbecue__content">
+            <div class="barbecue__img">
+                <img src="img/barbecue.svg" alt="Homem fazendo churrasco">
+            </div>
+
+            <div class="barbecue__forms">
+                <form action="" class="barbecue__registre" id="barbecue">
+                    <h1 class="barbecue__title"><span>Churras</span>cômetro</h1>
+
+                    <div class="barbecue__box">
+                        <i class='bx bx-group barbecue__icon'></i>
+                        <input id="adults" name="adults" type="number" placeholder="Adultos" class="barbecue__input">
+                    </div>
+                    <div class="barbecue__box">
+                        <i class='bx bx-face barbecue__icon'></i>
+                        <input id="kids" name="kids" type="number" placeholder="Crianças" class="barbecue__input">
+                    </div>
+                    <div class="barbecue__box">
+                        <i class='bx bx-time barbecue__icon'></i>
+                        <input id="duration" name="duration" type="number" placeholder="Duração (Horas)" class="barbecue__input">
+                    </div>
+
+                    <div class="barbecue__calculate">
+                        <a href="#" class="barbecue__button">Calcular</a>
+                    </div>
+                    
+                    <div class="barbecue__results">
+                        <p> <i class="fas fa-drumstick-bite"></i> Carne (Kilos) </p>
+                        <p> <i class="fas fa-beer"></i> Cerveja (Litros) </p>
+                        <p> <i class="fas fa-glass-whiskey"></i> Refrigerante (Litros) </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

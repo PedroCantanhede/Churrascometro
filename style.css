@@ -1,0 +1,197 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+/* CSS */
+:root {
+    --primary-color: #f50057;
+    --primary-color-dark: #3f3d56;
+    --primary-color-light: #A49EAC;
+    --primary-color-lighten: #F2F2F2;
+
+    --body-font: 'Open Sans', sans-serif;
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    }
+}
+
+*,::before,::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--primary-color-dark);
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+   text-decoration: none; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.barbecue {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.barbecue__content {
+    display: grid;
+}
+
+.barbecue__img {
+    justify-self: center;
+}
+
+.barbecue__img img {
+    width: 310px;
+    margin-top: 1.5rem;
+}
+
+.barbecue__forms {
+    position: relative;
+    height: 368px;
+}
+
+.barbecue__forms h1 {
+    font-family: 'Caveat', sans-serif;
+    font-size: 2.5rem;
+    color: var(--primary-color-dark);
+}
+
+.barbecue__forms span {
+    color: var(--primary-color);
+}
+
+.barbecue__registre {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    background-color: var(--primary-color-lighten);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(35, 0, 77, .2);
+}
+
+.barbecue__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 2rem;
+}
+
+.barbecue__box {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: .5rem;
+    padding: 1.125rem 1rem;
+    background-color: #FFF;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+
+.barbecue__icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.barbecue__input {
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    color: var(--primary-color-dark);
+}
+
+.barbecue__input::placeholder {
+   font-size: var(--normal-font-size);
+   font-family: var(--body-font);
+   color: var(--primary-color-light); 
+}
+
+.barbecue__button {
+    display: block;
+    height: 50px;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-weight: 600;
+    text-align: center;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.barbecue__button:hover{
+    background-color: #c90449;
+}
+
+.barbecue__button:active {
+    background-color: var(--primary-color-dark);
+}
+
+.barbecue__results p {
+    color: var(--primary-color-dark);
+}
+
+/* Responsive */
+@media screen and (min-width: 576px) {
+    .barbecue__forms {
+        width: 348px;
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .barbecue {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .barbecue__content {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        align-items: center;
+        margin-left: 10rem;
+    }
+
+    .barbecue__img {
+        display: flex;
+        width: 600px;
+        height: 588px;
+        background-color: var(--primary-color-lighten);
+        border-radius: 1rem;
+        padding-left: 1rem;
+    }
+
+    .barbecue__img img {
+        width: 390px;
+        margin-top: 0;
+    }
+
+    .barbecue__registre {
+        left: -9rem;
+        bottom: -10rem;
+    }
+}
+
+
