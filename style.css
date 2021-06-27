@@ -151,6 +151,12 @@ img {
 
 .barbecue__results p {
     color: var(--primary-color-dark);
+    font-weight: 600;
+}
+
+.barbecue__results span {
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 /* Responsive */
