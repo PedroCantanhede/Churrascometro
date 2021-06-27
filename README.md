@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Churrascômetro" title="Churrascômetro" src="github/logo.png" width="300px" />
+    <img alt="Churrascômetro" title="Churrascômetro" src="github/logo.png" width="350px" />
 </h1>
 
 <div align="center">
@@ -18,7 +18,7 @@
 
 Desafio proposto pelo Igor do curso Programador BR com o intuito de elaborar um sistema em JavaScript que calcula a quantidade necessária de comida e bebida para um churrasco.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c0a8e42d-208a-41cd-aabe-c5f405a37e3b/deploy-status)]()
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c0a8e42d-208a-41cd-aabe-c5f405a37e3b/deploy-status)](https://churrascometro-app.netlify.app/)
 
 <div align="center" >
   <img alt="Churrascômetro Layout" title="Churrascômetro" src="github/layout.png"/>
